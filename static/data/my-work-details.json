@@ -1,0 +1,34 @@
+[
+	{
+		"project_name": "Brassicaceae Tree of Life",
+		"poject_tags": ["frontend", "datavisualisatie"],
+		"project_type": "group",
+		"project_duration": "5 weeks",
+		"project_intensity": "fulltime",
+		"project_date_start": "11 december 2023",
+		"prject_data_end": "25 januari 2024",
+		"project_description_short": "Het developen van een interactieve datavisualisatie van de genetische stamboom van de Brassicaceae plantenfamilie",
+		"project_description_long": "Tijdens de minor Information design heb ik samen met 3 medestudenten (twee designers en één developer) een interactieve datavisualisatie ontwikkelt. Centraal staat de stamboom van de plantenfamilie Brassicaceae, waarin de gebruiker door middel van filters verschillende taxonomische levels kan oplichten, waarna deze voor specifieke species zichtbaar worden op de wereldkaart.",
+        "project_image_src": "/img/projects/brassitol/brassitol.png",
+		"used_skills": ["sveltekit", "d3.js"],
+		"client_name": "Kasper Hendriks",
+		"client_job_function": "Evolutiebioloog Naturalis",
+		"non_fiction_client": "Y"
+	},
+    {
+		"project_name": "The North Face X Arctic Travels",
+		"poject_tags": ["UX/UI design", "webdesign"],
+		"project_type": "solo",
+		"project_duration": "1 week",
+		"project_intensity": "fulltime",
+		"project_date_start": "15 maart 2023",
+		"prject_data_end": "22 maart 2023",
+		"project_description_short": "Onderzoek doen naar twee opdrachtgevers en twee doelgroepen en de wensen van beide vertalen in een design voor een landingspagina voor het unieke winterpak van deze samenwerking",
+		"project_description_long": "",
+        "project_image_src": "/img/projects/the-north-face/thenorthface.png",
+		"used_skills": ["Adobe XD"],
+		"client_name": "The North Face",
+		"client_job_function": "",
+		"non_fiction_client": "N"
+	}
+]
