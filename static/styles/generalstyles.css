@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Franklin Gothic Medium';
+    src: url('./static/fonts/Franklin-Gothic-Medium.ttf') format('truetype');
+}
+
+* {
+    margin:0;
+    padding:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+  
+:root {
+    --primary-color:#BDB0FF;
+    --secundary-color:#FBFAF4;
+    --text-color:#3C3C3C;
+
+    /* TODO: dont use pixel, just example for now */
+    --standard-padding-section:145px;
+}
