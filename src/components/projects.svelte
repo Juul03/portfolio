@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 
-	let myProjectsData;
+	let myProjectsData = [{}];
 
 	let fetchData = async () => {
 		try {
