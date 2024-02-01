@@ -1,5 +1,6 @@
 <script>
     import Header from '../components/header.svelte';
+    import Usps from '../components/usps/usps.svelte';
 </script>
 
 <Header/>
@@ -16,3 +17,9 @@
 
     <img src="/img/people/me.svg" alt="Dit ben ik! Julia">
 </header>
+
+<main>
+
+    <Usps/>
+
+</main>
