@@ -17,3 +17,19 @@
 		</ul>
 	</nav>
 </header>
+
+<style lang="scss">
+    header {
+      width: 100%;
+      background: var(--primary-color);
+  
+      nav {
+        width: 100%;
+  
+        ul {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+</style>
