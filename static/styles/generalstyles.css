@@ -1,5 +1,7 @@
 :root {
 	--primary-color: #bdb0ff;
+    --primary-color-rgb: 189,176,255;
+    --background-alpha:0.23;
 	--secundary-color: #fbfaf4;
 	--text-color: #3c3c3c;
 
@@ -62,4 +64,17 @@ h3 {
 
 p, li, a{
 	font-size: var(--body-tekst-font-size);
+    line-height:1.5;
+}
+
+a.primary-button {
+    background:var(--primary-color);
+    color:var(--secundary-color);
+    padding:1.25rem 3rem;
+}
+
+a.secundary-button {
+    background:var(--secundary-color);
+    color:var(--primary-color);
+    padding:1.25rem 3rem;
 }
