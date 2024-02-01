@@ -1,20 +1,65 @@
+:root {
+	--primary-color: #bdb0ff;
+	--secundary-color: #fbfaf4;
+	--text-color: #3c3c3c;
+
+	--base-font-size: 16px;
+
+	--heading-1-font-size: 4.5rem;
+	--heading-2-font-size: 2.8125rem;
+	--heading-3-font-size: 1.75rem;
+
+	--body-tekst-font-size: 1.75rem;
+
+	/* TODO: dont use pixel, just example for now */
+	--standard-padding-section: 9rem;
+}
+
 @font-face {
-    font-family: 'Franklin Gothic Medium';
-    src: url('./static/fonts/Franklin-Gothic-Medium.ttf') format('truetype');
+	font-family: 'Franklin Gothic Medium';
+	src: url('./static/fonts/Franklin-Gothic-Medium.ttf') format('truetype');
 }
 
 * {
-    margin:0;
-    padding:0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: var(--base-font-size);
+    text-decoration:none;
+    list-style:none;
 }
 
-  
-:root {
-    --primary-color:#BDB0FF;
-    --secundary-color:#FBFAF4;
-    --text-color:#3C3C3C;
+@media (max-width: 900px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (max-width: 400px) {
+	html {
+		font-size: 13px;
+	}
+}
 
-    /* TODO: dont use pixel, just example for now */
-    --standard-padding-section:145px;
+body {
+    background:var(--secundary-color);
+}
+
+h1, h2, h3 {
+    color:var(--primary-color);
+}
+
+h1 {
+	font-size: var(--heading-1-font-size);
+}
+
+h2 {
+	font-size: var(--heading-2-font-size);
+}
+
+h3 {
+	font-size: var(--heading-3-font-size);
+}
+
+p, li, a{
+	font-size: var(--body-tekst-font-size);
 }
