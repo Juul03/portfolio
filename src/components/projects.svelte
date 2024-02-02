@@ -1,7 +1,24 @@
 <script>
 	import { onMount } from 'svelte';
 
-	let myProjectsData = [{}];
+	let myProjectsData = [
+		{
+			project_name: '',
+			project_tags: [],
+			project_type: '',
+			project_duration: '',
+			project_intensity: '',
+			project_date_start: '',
+			prrject_data_end: '',
+			project_description_short: '',
+			project_description_long: '',
+			project_image_src: '',
+			used_skills: [],
+			client_name: '',
+			client_job_function: '',
+			non_fiction_client: ''
+		}
+	];
 
 	let fetchData = async () => {
 		try {
@@ -21,7 +38,7 @@
 	fetchData();
 </script>
 
-<section>
+<section id="projects">
 	<h2>Mijn werk</h2>
 
 	<section>
@@ -53,10 +70,10 @@
 						</li>
 					</ul>
 
-                    <!-- TODO: add link in json file and import here -->
-                    <a href="/">Lees meer</a>
+					<!-- TODO: add link in json file and import here -->
+					<a href="/">Lees meer</a>
 
-                    <img src={project.project_image_src} alt="">
+					<img src={project.project_image_src} alt="" />
 				</section>
 			{/each}
 		{:else}
@@ -65,8 +82,24 @@
 	</section>
 </section>
 
-<style>
-    img {
-        max-width:40%;
-    }
+<style lang="scss">
+	section {
+		h2 {
+			padding-left: var(--standard-padding-section);
+		}
+
+		> section > section {
+			padding: var(--standard-padding-section);
+		}
+		> section > section:nth-of-type(odd) {
+			background-color: rgba(var(--primary-color-rgb), var(--background-alpha));
+		}
+
+		> section > section:nth-of-type(even) {
+			background: var(--secundary-color);
+		}
+	}
+	img {
+		max-width: 40%;
+	}
 </style>
