@@ -36,7 +36,7 @@
 				}
 
 				li:not(:first-child) {
-					flex-grow: 1;
+					flex-grow: .5;
 				}
 
                 li > a {

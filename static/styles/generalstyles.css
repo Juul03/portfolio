@@ -1,7 +1,7 @@
 :root {
 	--primary-color: #bdb0ff;
-    --primary-color-rgb: 189,176,255;
-    --background-alpha:0.23;
+	--primary-color-rgb: 189, 176, 255;
+	--background-alpha: 0.23;
 	--secundary-color: #fbfaf4;
 	--text-color: #3c3c3c;
 
@@ -11,11 +11,11 @@
 	--heading-2-font-size: 2.8125rem;
 	--heading-3-font-size: 1.75rem;
 
-	--body-tekst-font-size: 1.75rem;
+	--body-tekst-font-size: 1.2rem;
 
-	/* TODO: dont use pixel, just example for now */
 	--standard-padding-section: 9rem;
-    --standard-border-radius-button:5px;
+	--standard-padding-between-text: 2.5rem;
+	--standard-border-radius-button: 5px;
 }
 
 @font-face {
@@ -28,8 +28,8 @@
 	padding: 0;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: var(--base-font-size);
-    text-decoration:none;
-    list-style:none;
+	text-decoration: none;
+	list-style: none;
 }
 
 @media (max-width: 900px) {
@@ -44,49 +44,63 @@
 }
 
 body {
-    background:var(--secundary-color);
+	background: var(--secundary-color);
 }
 
-h1, h2, h3, h4 {
-    color:var(--primary-color);
+h1,
+h2,
+h3,
+h4 {
+	color: var(--primary-color);
 }
 
 h1 {
 	font-size: var(--heading-1-font-size);
+	margin-bottom:1.5rem;
 }
 
 h2 {
 	font-size: var(--heading-2-font-size);
+	margin-bottom: 1rem;
 }
 
 h3 {
 	font-size: var(--heading-3-font-size);
+	margin-bottom: 1rem;
 }
 
 h4 {
-    font-size: var(--body-tekst-font-size);   
+	font-size: var(--body-tekst-font-size);
 }
 
-p, li, a{
+p,
+li,
+a {
 	font-size: var(--body-tekst-font-size);
-    line-height:1.5;
-    color:var(--text-color);
+	line-height: 1.5;
+	color: var(--text-color);
+}
+
+p {
+	max-width: 750px;
 }
 
 a.primary-button {
-    display:inline-block;
-    flex:none;
-    background:var(--primary-color);
-    color:var(--secundary-color);
-    padding:1.25rem 3rem;
-    border-radius: var(--standard-border-radius-button);
+	display: inline-block;
+	flex: none;
+	background: var(--primary-color);
+	color: var(--secundary-color);
+	padding: 1rem 3rem;
+	border-radius: var(--standard-border-radius-button);
+	margin-top: 2.5rem;
 }
 
 a.secundary-button {
-    display:inline-block;
-    flex:none;
-    background:var(--secundary-color);
-    color:var(--primary-color);
-    padding:1.25rem 3rem;
-    border-radius: var(--standard-border-radius-button);
+	display: inline-block;
+	flex: none;
+	background: var(--secundary-color);
+	color: var(--primary-color);
+	padding: 1rem 3rem;
+	border-radius: var(--standard-border-radius-button);
+	margin-top: 2.5rem;
 }

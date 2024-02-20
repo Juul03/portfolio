@@ -105,14 +105,20 @@
 
 				h3 {
 					font-size: var(--heading-2-font-size);
+					margin-bottom:1.5rem;
+				}
+
+				p {
+					margin-bottom:var(--standard-padding-between-text);
 				}
 
 				> div:nth-of-type(1) {
 					order: -1;
 
 					display: flex;
-					align-items: center; /* Align items vertically */
-					gap: 1rem; /* Adjust the gap between h4 and img as needed */
+					align-items: center;
+					gap: 1rem;
+					margin-bottom:1rem;
 
 					img {
 						height: 2rem;
@@ -122,7 +128,6 @@
 
 					h4 {
 						font-size: var(--heading-3-font-size);
-						margin: 0; /* Remove default margin */
 					}
 				}
 

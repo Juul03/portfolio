@@ -49,10 +49,6 @@
 				order: -1;
 			}
 
-			p {
-				margin-bottom: 3rem;
-			}
-
 			div {
                 display:flex;
                 flex-direction:row;
