@@ -10,6 +10,7 @@
 		"project_description_short": "Het developen van een interactieve datavisualisatie van de genetische stamboom van de Brassicaceae plantenfamilie",
 		"project_description_long": "Tijdens de minor Information design heb ik samen met 3 medestudenten (twee designers en één developer) een interactieve datavisualisatie ontwikkelt. Centraal staat de stamboom van de plantenfamilie Brassicaceae, waarin de gebruiker door middel van filters verschillende taxonomische levels kan oplichten, waarna deze voor specifieke species zichtbaar worden op de wereldkaart.",
         "project_image_src": "/img/projects/brassitol/brassitol.png",
+		"project_detail_page_url": "/projecten/brassitol",
 		"used_skills": ["sveltekit", "d3.js"],
 		"client_name": "Kasper Hendriks",
 		"client_job_function": "Evolutiebioloog Naturalis",

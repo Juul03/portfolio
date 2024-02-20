@@ -74,7 +74,9 @@
 						</ul>
 
 						<!-- TODO: add link in json file and import here -->
-						<a class="primary-button" href="/">Lees meer</a>
+						<!-- {project.project_detail_page_url} not working with the last slash -->
+						<a class="primary-button" href="/projecten/brassitol">Lees meer</a>
+
 					</div>
 
 					<img src={project.project_image_src} alt="" />

@@ -1,7 +1,15 @@
 [
 	{
 		"project_name": "Brassicaceae Tree of Life",
-        "projectId": "brassitol",
-        "content": "Er was eens een broodje kaas in een kasteel"
+		"project_Id": "brassitol",
+        "project_type": "group",
+		"project_tags": ["frontend", "datavisualisatie"],
+		"project_header_descr": "Tijdens de minor Information design heb ik samen met 3 medestudenten (twee designers en één developer) een interactieve datavisualisatie ontwikkelt. Centraal staat de stamboom van de plantenfamilie Brassicaceae, waarin de gebruiker door middel van filters verschillende taxonomische levels kan oplichten, waarna deze voor specifieke species zichtbaar worden op de wereldkaart.",
+        "project_image_src": "/img/projects/brassitol/brassitol.png",
+        "github_link": "https://github.com/Juul03/BrassiToL",
+        "live_link": "https://brassi-to-l.vercel.app/",
+        "project_brief": "Hoe kan de Brassicaceae Tree of Life online op een interactieve manier worden gepresenteerd, met aanvullende datavisualisaties, zodat het toegankelijk is voor zowel wetenschappers die onderzoek doen naar een modelsoort als taxonomen?",
+        "hard_skills": ["kaas"],
+        "soft-skills": []
 	}
 ]
