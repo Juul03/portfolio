@@ -10,6 +10,28 @@
         "live_link": "",
         "project_brief": "The North Face en Arctic Travels zijn een samenwerking aangegaan om een paar speciale producten te lanceren. Voor elk product is er een aparte landingspagina. Mijn taak om een landingspagina voor één van de producten te maken, namelijk het winterpak. Deze is geschikt voor wintersport én expedities naar koude landen. Het product is gericht op liefhebbers die niet bang zijn voor een uitdaging, maar ook reizigers die van de natuur willen genieten. De doelgroep is 20-40 jarige.",
         "hard_skills": ["ux-onderzoek", "adobe XD", "wireframing"],
-        "soft-skills": ["zelfstandig projectleiden", "plannen en structureren"]
+        "soft-skills": ["zelfstandig projectleiden", "plannen en structureren"],
+        "proces": [
+            {
+                "title": "Wireframing - iteratie 1",
+                "text": ["Het eerste wireframe toont de landingspagina met alle secties. Na een ronde feedback bleek de tweede sectie met specificaties over de beschikbare kleuren en prijs overbodig: 'dat zien de geïnteresseerde in de online winkel wel'. Daarom is er voor gekozen om deze weg te laten in de volgende iteratie en te vervangen door een sectie met alle coole specificaties van het pak"],
+                "img": ["/img/projects/the-north-face/the-north-face-wireframe-1.jpeg"]
+            },
+            {
+                "title": "Wireframing - iteratie 2",
+                "text": ["Het tweede wireframe toont de specificatie sectie in een bijpassende lay-out en een visuele aanpak. Door over de afbeeldingen te hoveren kan de gebruiker meer details zien over die specificatie. Eenzelfde lay-out is gebruikt in de sectie waar de verschillende reizen worden aangeboden. Dit zorgt voor een consistent en samenhangend geheel"],
+                "img": ["/img/projects/the-north-face/the-north-face-wireframe-2.jpeg"]
+            },
+            {
+                "title": "Design - iteratie 1",
+                "text": ["Tijd om de wireframes om te zetten naar design. Hieronder valt het toevoegen van de merkelementen en stijlen en daarnaast het beeldmateriaal. Ziet er al goed uit! Maar de achtergrond is nu vrij saai en maakt het geheel nog al plat, daar moet nog iets aan gedaan worden."],
+                "img": ["/img/projects/the-north-face/the-north-face-design-1.jpeg"]
+            },
+            {
+                "title": "Design - iteratie 2",
+                "text": ["Zo, met een sneeuw textuur op de achtergrond komt het geheel wat meer tot leven en ontstaat er diepte en gelaagdheid op de pagina."],
+                "img": ["/img/projects/the-north-face/the-north-face-design-full.jpeg"]
+            }
+        ]
 	}
 ]

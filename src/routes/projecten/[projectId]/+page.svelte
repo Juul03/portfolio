@@ -68,6 +68,19 @@
 			<h2>De opdracht</h2>
 			<p>{activeProjectData.project_brief}</p>
 		</section>
+
+		{#if activeProjectData.proces}
+			<section id="proces">
+				<h2>Het proces en ontwerpkeuzes</h2>
+				{#each activeProjectData.proces as procesPart}
+					<section>
+						<h3>{procesPart.title}</h3>
+						<p>{procesPart.text}</p>
+						<img src={procesPart.img} alt="proces afbeelding" />
+					</section>
+				{/each}
+			</section>
+		{/if}
 	</main>
 {:else if error}
 	<section id="error">
@@ -122,6 +135,34 @@
 		img {
 			max-width: 30%;
 			// order: -1;
+		}
+	}
+
+	#proces {
+		section {
+			display: flex;
+            flex-direction:column;
+            align-items: center;
+
+			// flex-wrap: wrap;
+			// justify-content: space-between;
+			padding: var(--standard-padding-section);
+
+			// h3 {
+			// 	width: calc(100% / 3 * 2);
+			// }
+
+			// p {
+			// 	width: calc(100% / 3 * 2);
+			// }
+            // TODO: OM DE IMG EEN FIGURE ZETTEN, DIE DE AFMETINGEN VAN EEN LAPTOP GEVEN en dan overflow-y scroll erp
+			img {
+				// height: 80vh;
+                width:50%;
+			}
+		}
+		section:nth-of-type(even) {
+			background: rgba(var(--primary-color-rgb), var(--background-alpha));
 		}
 	}
 
