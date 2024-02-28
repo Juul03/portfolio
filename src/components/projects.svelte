@@ -13,6 +13,7 @@
 			project_description_short: '',
 			project_description_long: '',
 			project_image_src: '',
+			project_detail_page_url: '',
 			used_skills: [],
 			client_name: '',
 			client_job_function: '',
@@ -75,7 +76,7 @@
 
 						<!-- TODO: add link in json file and import here -->
 						<!-- {project.project_detail_page_url} not working with the last slash -->
-						<a class="primary-button" href="/projecten/brassitol">Lees meer</a>
+						<a class="primary-button" href="{project.project_detail_page_url}">Lees meer</a>
 
 					</div>
 

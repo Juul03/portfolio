@@ -1,8 +1,9 @@
 <script>
+	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
-	let lastSegment;
-	let activeProject;
+	let activeProjectName;
+	let activeProjectData;
 	let error = null;
 
 	let getProjectData = async (project) => {
@@ -13,7 +14,7 @@
 			}
 			const data = await response.json();
 			console.log('dataaaa of the project', data);
-			activeProject = data[0];
+			activeProjectData = data[0];
 		} catch (err) {
 			// Handle fetch errors
 			error = `Error: ${err.message}`;
@@ -21,51 +22,56 @@
 	};
 
 	onMount(() => {
-		// Get the current URL path
-		const urlPath = window.location.pathname;
-		// Split the URL path by slashes ('/') to get an array of segments
-		const urlSegments = urlPath.split('/');
-		// Get the last segment of the URL
-		lastSegment = urlSegments[urlSegments.length - 1];
+		// Subscribe to changes in the page store
+		const unsubscribe = page.subscribe(($page) => {
+			// Access the route parameters
+			activeProjectName = $page.params.projectId;
 
-		getProjectData(lastSegment);
+			getProjectData(activeProjectName);
+
+			// Log the projectID
+			console.log('Project ID:', activeProjectName);
+		});
+
+		return unsubscribe();
 	});
 </script>
 
-{#if activeProject}
+{#if activeProjectName && activeProjectData}
 	<header>
 		<div>
-			<h2>{activeProject.project_name}</h2>
+			<h2>{activeProjectData.project_name}</h2>
 			<h3>
-				{#if activeProject.project_type == 'group'}
-					{activeProject.project_tags}
-                    <img src="/img/icons/group-project.svg" alt="group project" />
+				{#if activeProjectData.project_type == 'group'}
+					{activeProjectData.project_tags}
+					<img src="/img/icons/group-project.svg" alt="group project" />
 				{/if}
 			</h3>
-			<p>{activeProject.project_header_descr}</p>
+			<p>{activeProjectData.project_header_descr}</p>
 
-			<div>
-				<a class="secundary-button" href={activeProject.github_link}>
-					<img src="/img/icons/github.svg" alt="github" />
-					Bekijk de code op Github</a
-				>
-				<a class="primary-button" href={activeProject.live_link}>Bekijk de Brassitol live</a>
-			</div>
+			{#if activeProjectData.github_link !== '' || activeProjectData.live_link !== ''}
+				<div>
+					<a class="secundary-button" href={activeProjectData.github_link}>
+						<img src="/img/icons/github.svg" alt="github" />
+						Bekijk de code op Github</a
+					>
+					<a class="primary-button" href={activeProjectData.live_link}>Bekijk de Brassitol live</a>
+				</div>
+			{/if}
 		</div>
 
-		<img src={activeProject.project_image_src} alt="Dit ben ik! Julia" />
+		<img src={activeProjectData.project_image_src} alt="projectafbeelding" />
 	</header>
 
-    <main>
-        <section>
-            <h2>De opdracht</h2>
-            <p>{activeProject.project_brief}</p>
-        </section>
-    </main>
-
+	<main>
+		<section>
+			<h2>De opdracht</h2>
+			<p>{activeProjectData.project_brief}</p>
+		</section>
+	</main>
 {:else if error}
 	<section id="error">
-		<p>Oops! {lastSegment} bestaat niet helaas</p>
+		<p>Oops! {activeProjectName} bestaat niet helaas</p>
 		<a class="primary-button" href="/">Ik breng je terug naar home</a>
 	</section>
 {:else}
@@ -96,12 +102,12 @@
 			h3 {
 				order: -1;
 
-                display:flex;
-                gap:1rem;
+				display: flex;
+				gap: 1rem;
 
-                img {
-                    order: -1;
-                }
+				img {
+					order: -1;
+				}
 			}
 
 			div {
