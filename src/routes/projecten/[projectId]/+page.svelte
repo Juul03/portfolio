@@ -2,6 +2,9 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
+	import Header from '../../../components/header.svelte';
+	import Footer from '../../../components/footer.svelte';
+
 	let activeProjectName;
 	let activeProjectData;
 	let error = null;
@@ -36,6 +39,8 @@
 		return unsubscribe();
 	});
 </script>
+
+<Header/>
 
 {#if activeProjectName && activeProjectData}
 	<header>
@@ -90,6 +95,8 @@
 {:else}
 	<p>Project data aan het laden...</p>
 {/if}
+
+<Footer/>
 
 <style lang="scss">
 	section#error {

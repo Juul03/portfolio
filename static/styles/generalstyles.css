@@ -16,6 +16,8 @@
 	--standard-padding-section: 9rem;
 	--standard-padding-between-text: 2.5rem;
 	--standard-border-radius-button: 5px;
+
+	--standard-transition-time:.5s;
 }
 
 @font-face {
@@ -30,6 +32,7 @@
 	font-size: var(--base-font-size);
 	text-decoration: none;
 	list-style: none;
+	scroll-behavior: smooth;
 }
 
 @media (max-width: 900px) {
@@ -92,7 +95,21 @@ a.primary-button {
 	color: var(--secundary-color);
 	padding: 1rem 3rem;
 	border-radius: var(--standard-border-radius-button);
+	border:2px solid transparent;
 	margin-top: 2.5rem;
+
+	transition:var(--standard-transition-time);
+}
+
+a.primary-button:hover {
+	background: var(--secundary-color);
+	color: var(--primary-color);
+	padding: 1rem 3rem;
+	border-radius: var(--standard-border-radius-button);
+	border:2px solid var(--primary-color);
+	margin-top: 2.5rem;
+
+	transform:scale(1.1);
 }
 
 a.secundary-button {
@@ -102,5 +119,19 @@ a.secundary-button {
 	color: var(--primary-color);
 	padding: 1rem 3rem;
 	border-radius: var(--standard-border-radius-button);
+	border:2px solid transparent;
 	margin-top: 2.5rem;
+
+	transition:var(--standard-transition-time);
+}
+
+a.secundary-button:hover {
+	background: var(--primary-color);
+	color: var(--secundary-color);
+	padding: 1rem 3rem;
+	border-radius: var(--standard-border-radius-button);
+	border:2px solid var(--secundary-color);
+	margin-top: 2.5rem;
+
+	transform:scale(1.1);
 }

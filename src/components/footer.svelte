@@ -1,4 +1,4 @@
-<footer>
+<footer id="contact">
 	<h2>Neem contact op!</h2>
 	<h3>Tot hier gekomen? Interesse of vragen?</h3>
 	<ul>
