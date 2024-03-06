@@ -74,8 +74,6 @@
 	</header>
 
 	<main>
-		<Quotes/>
-		
 		<section>
 			<h2>De opdracht</h2>
 			<p>{activeProjectData.project_brief}</p>
@@ -97,6 +95,8 @@
 				{/each}
 			</section>
 		{/if}
+
+		<Quotes/>
 
 		<section id="more_projects">
 			<h2>Nog trek in een toetje? Bekijk dit design!</h2>
@@ -170,11 +170,12 @@
 		}
 	}
 
-	main > section:nth-of-type(1), #more_projects {
+	main > section:nth-of-type(1) {
 		padding:var(--standard-padding-section);
 	}
 
 	#more_projects {
+		padding-top:var(--standard-padding-section);
 		h2{
 			text-align:center;
 		}
