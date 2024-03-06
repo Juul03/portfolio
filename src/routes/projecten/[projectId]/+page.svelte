@@ -4,6 +4,7 @@
 
 	import Header from '../../../components/header.svelte';
 	import Footer from '../../../components/footer.svelte';
+	import Quotes from '../../../components/quotes.svelte';
 
 	let activeProjectName;
 	let activeProjectData;
@@ -51,6 +52,10 @@
 					{activeProjectData.project_tags}
 					<img src="/img/icons/group-project.svg" alt="group project" />
 				{/if}
+				{#if activeProjectData.project_type == 'solo'}
+					{activeProjectData.project_tags}
+					<img src="/img/icons/individual-project.svg" alt="solo project">
+				{/if}
 			</h3>
 			<p>{activeProjectData.project_header_descr}</p>
 
@@ -69,6 +74,8 @@
 	</header>
 
 	<main>
+		<Quotes/>
+		
 		<section>
 			<h2>De opdracht</h2>
 			<p>{activeProjectData.project_brief}</p>
@@ -81,12 +88,30 @@
 					<section>
 						<h3>{procesPart.title}</h3>
 						<p>{procesPart.text}</p>
-						<img src={procesPart.img} alt="proces afbeelding" />
+						<figure class="desktop-mock-up">
+							<div>
+								<img src={procesPart.img} alt="proces afbeelding" />
+							</div>
+						</figure>
 					</section>
 				{/each}
 			</section>
 		{/if}
+
+		<section id="more_projects">
+			<h2>Nog trek in een toetje? Bekijk dit design!</h2>
+			<ul>
+				<li>
+					<figure class="desktop-mock-up">
+						<div>
+							<img src="/img/projects/nailARt/nailArt-landing-page.png" alt="nailARt">
+						</div>
+					</figure>
+				</li>
+			</ul>
+		</section>
 	</main>
+
 {:else if error}
 	<section id="error">
 		<p>Oops! {activeProjectName} bestaat niet helaas</p>
@@ -145,7 +170,21 @@
 		}
 	}
 
+	main > section:nth-of-type(1), #more_projects {
+		padding:var(--standard-padding-section);
+	}
+
+	#more_projects {
+		h2{
+			text-align:center;
+		}
+	}
+
 	#proces {
+		h2 {
+			padding-left:var(--standard-padding-section);
+
+		}
 		section {
 			display: flex;
             flex-direction:column;
@@ -155,26 +194,40 @@
 			// justify-content: space-between;
 			padding: var(--standard-padding-section);
 
-			// h3 {
-			// 	width: calc(100% / 3 * 2);
-			// }
-
-			// p {
-			// 	width: calc(100% / 3 * 2);
-			// }
-            // TODO: OM DE IMG EEN FIGURE ZETTEN, DIE DE AFMETINGEN VAN EEN LAPTOP GEVEN en dan overflow-y scroll erp
-			img {
-				// height: 80vh;
-                width:50%;
+			p {
+				margin-bottom:var(--standard-padding-between-text);
 			}
+            
+
 		}
 		section:nth-of-type(even) {
 			background: rgba(var(--primary-color-rgb), var(--background-alpha));
 		}
 	}
 
-	a > img {
-		/* TODO: nog aanpassen, alleen voor het gemak even gedaan */
-		width: 1.5rem;
-	}
+	figure.desktop-mock-up {
+				margin:auto;
+				width:38rem;
+				height:32rem;
+				background-image: url('/img/projects/desktop.png');
+				background-size:cover;
+				background-repeat:no-repeat;
+				background-position: center;
+
+				display:flex;
+
+				div {
+					width:95%;
+					height:63%;
+					margin:1.5rem auto;
+					overflow-y: scroll;
+
+					border-radius:.2rem;
+
+					img {
+						width:100%;
+					}
+				}
+			}
+
 </style>

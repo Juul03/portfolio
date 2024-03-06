@@ -39,10 +39,20 @@
 	html {
 		font-size: 15px;
 	}
+
+	figure {
+		width:29rem;
+		height:22rem;
+	}
 }
 @media (max-width: 400px) {
 	html {
 		font-size: 13px;
+	}
+
+	figure {
+		width:19rem;
+		height:12rem;
 	}
 }
 
