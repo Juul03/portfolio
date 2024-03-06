@@ -231,4 +231,10 @@
 				}
 			}
 
+			
+	a > img {
+		/* TODO: nog aanpassen, alleen voor het gemak even gedaan */
+		width: 1.5rem;
+	}
+
 </style>
