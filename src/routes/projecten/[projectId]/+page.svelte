@@ -98,6 +98,7 @@
 
 		<Quotes/>
 
+		{#if activeProjectData.project_tags.includes("ux-design")}
 		<section id="more_projects">
 			<h2>Nog trek in een toetje? Bekijk dit design!</h2>
 			<ul>
@@ -110,6 +111,7 @@
 				</li>
 			</ul>
 		</section>
+		{/if}
 	</main>
 
 {:else if error}
