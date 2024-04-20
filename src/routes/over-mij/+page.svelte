@@ -2,6 +2,11 @@
 	import Header from '../../components/header.svelte';
 	import Footer from '../../components/footer.svelte';
     import Quotes from '../../components/quotes.svelte';
+    import SkillLevel1 from '../../components/skill-level/skill-level1.svelte';
+    import SkillLevel2 from '../../components/skill-level/skill-level2.svelte';
+    import SkillLevel3 from '../../components/skill-level/skill-level3.svelte';
+    import SkillLevel4 from '../../components/skill-level/skill-level4.svelte';
+    import SkillLevel5 from '../../components/skill-level/skill-level5.svelte';
 </script>
 
 <Header />
@@ -32,16 +37,43 @@
                 <section>
                     <h4>Tech</h4>
                     <ul class="listed">
-                        <li>Scss</li>
-                        <li>Sveltekit</li>
-                        <li>D3.js</li>
+                        <li>HTML
+                            <SkillLevel4/>
+                        </li>
+                        <li>CSS
+                            <SkillLevel4/>
+                        </li>
+                        <li>Javascript
+                            <SkillLevel4/>
+                        </li>
+                        <li>Scss
+                            <SkillLevel4/>
+                        </li>
+                        <li>Sveltekit
+                            <SkillLevel2/>
+                        </li>
+                        <li>D3.js
+                            <SkillLevel3/>
+                        </li>
                     </ul>
                 </section>
                 <section>
                     <h4>Design</h4>
                     <ul class="listed">
-                        <li></li>
-                        <li>UX-werk & onderzoeksmethoden</li>
+                        <li>Adobe Indesign
+                            <SkillLevel4/>
+                        </li>
+                        <li>Adobe XD/ Figma
+                            <SkillLevel4/>
+                        </li>
+                        <li>Adobe Illustrator
+                            <SkillLevel3/>
+                        </li>
+                        <li>Adobe Photoshop
+                            <SkillLevel1/>
+                        </li>
+                        <li>UX-werk & onderzoeksmethoden
+                        </li>
                     </ul>
                 </section>
             </section>
@@ -73,8 +105,8 @@
         justify-content: center;
 
         > section:first-of-type#over-mij {
-            flex-grow:4;
-            width:80%;
+            flex-grow:3;
+            width:75%;
             
             display:flex;
             flex-direction: column;
@@ -96,7 +128,7 @@
 
         > section:last-of-type#skills {
             flex-grow:1;
-            width:20%;
+            width:25%;
             order:-1;
 
             background-color: rgba(var(--primary-color-rgb), var(--background-alpha));
@@ -113,6 +145,14 @@
 
                 > section {
                     margin: 1rem 0;
+
+                    ul li {
+                        display:flex;
+                        flex-wrap:wrap;
+                        gap:.5rem;
+                        align-items:center;
+                        justify-content: space-between;     
+                    }
 
                 }
             }
