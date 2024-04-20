@@ -6,7 +6,7 @@
 				<a href="/"><img src="/favicon.svg" alt="Home" /></a>
 			</li>
 			<li>
-				<a href="#projects">Mijn werk</a>
+				<a href="/#projects">Mijn werk</a>
 			</li>
 			<li>
 				<a href="/over-mij">Over mij</a>
