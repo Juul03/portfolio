@@ -1,0 +1,15 @@
+[
+	{
+		"project_name": "De Sprinter - Magazine",
+		"project_Id": "sav",
+        "project_type": "group",
+		"project_tags": ["magazine design", "drukwerk"],
+		"project_header_descr": "Het ontwerpen van het jaarlijkse clubblad van de plaatselijke atletiekvereniging (300 oplagen)",
+        "project_image_src": "/img/projects/sav/Glossy-Wereldkampioenschap-Mock-Up.png",
+        "github_link": "",
+        "live_link": "",
+        "project_brief": "",
+        "hard_skills": ["Sveltekit, D3.js"],
+        "soft-skills": ["Samenwerken, managment"]
+	}
+]
