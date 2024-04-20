@@ -22,10 +22,22 @@
                 leuke stage die een combinatie van beide biedt!
             </p>
             <p>
-                iets over soft en hardskills, wat anderen over mij zeggen
-                Ik help altijd anderen en ben nu zelf aan de beurt om dingen te leren
+                Zelf ben ik een creatieve denker die graag haar ideeën op papier zet met ondersteundende tekeningen. Ik werk georganisseerd en hoor
+                van anderen terug dat ze mijn time- en taskmanagment waarderen. Door deze manier van werken heb ik vaak tijd om anderen die het nodig
+                hebben te helpen. Soms zet ik daardoor mijn eigen ontwikkeling wat op pauze, echter zou ik nu graag zelf dezelfde ondersteuning ontvangen
+                om mijn professionele ontwikkeling naar een hoger niveau te tillen.
             </p>
-            <p>leerdoelen (responsive webdesign, al wel wat mee gedaan met mediaqueries en flexbox, en mobile first design) en aflsuitng</p>
+            <p>
+                De onderwerpen waarin ik me nog verder wil ontwikkelen, zowel op het gebied van development als design, zijn responsive webdesign. Hierbij 
+                heb ik al wel een basis gelegd met mediaqueries, flexbox en grid. Daarnaast heb ik ook wat ervaring met mobile-first design, wat ik graag zou 
+                willen uitbreiden. Op het gebied van webdesign, specifiek in UX-principes, wil ik mijn kennis vergroten om websites nog beter te laten 
+                aansluiten bij de opdrachtgever en doelgroep.
+            </p>
+            <p>
+                Tot slot wil ik benadrukken dat ik een creatieve student ben die op zoek is naar een gevarieerde en uitdagende stage in de creatieve sector. 
+                Ben jij, of ken jij, een bedrijf dat niet alleen gespecialiseerd is in webdesign, maar ook een breed scala aan opdrachten aanbiedt? Neem 
+                dan vooral contact op! 
+            </p>
         </div>
     </section>
     
@@ -80,7 +92,12 @@
             <section>
                 <h3>Softskills</h3>
                 <ul class="listed">
+                    <li>Leergierig</li>
+                    <li>Kritisch</li>
+                    <li>Proactief</li>
                     <li>Behulpzaam</li>
+                    <li>Zelfstandige teamplayer</li>
+                    <li>Visual Thinker</li>
                 </ul>
             </section>
         
