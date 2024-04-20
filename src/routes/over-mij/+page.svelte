@@ -1,3 +1,11 @@
+<script>
+	import Header from '../../components/header.svelte';
+	import Footer from '../../components/footer.svelte';
+    import Quotes from '../../components/quotes.svelte';
+</script>
+
+<Header />
+
 <main>
     <section id="over-mij">
         <div>
@@ -55,11 +63,14 @@
     </section>
 </main>
 
+<Quotes/>
+
+<Footer/>
+
 <style lang="scss">
     main {
         display:flex;
         justify-content: center;
-        // flex-wrap:wrap;
 
         > section:first-of-type#over-mij {
             flex-grow:4;
