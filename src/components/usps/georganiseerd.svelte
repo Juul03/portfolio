@@ -1,4 +1,4 @@
 <section>
     <h3>Georganiseerd</h3>
-    <p>Laat mij maar een plan maken met alles wat er moet gebeuren, zo kunnen we binnen een bepaalde tijd zoveel mogelijk uit elkaar en uit het project halen!</p>
+    <p>Een project van korte of lange tijd? Ik kan snel inzien wat er kan binnen het tijdsbestek en maak hierbij gebruik van waardevolle werkmethodes om het tot een passend eindresultaat te maken.</p>
 </section>
