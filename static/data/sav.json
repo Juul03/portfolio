@@ -8,8 +8,41 @@
         "project_image_src": "/img/projects/sav/Glossy-Wereldkampioenschap-Mock-Up.png",
         "github_link": "",
         "live_link": "",
-        "project_brief": "",
-        "hard_skills": ["Sveltekit, D3.js"],
-        "soft-skills": ["Samenwerken, managment"]
+        "project_brief": "Voor de atletiekvereniging moet het jaarlijkse clubblad ontworpen worden. De teksten en afbeeldingen worden aangeleverd en aan mij de taak om deze in elkaar te zetten. Naast deze werkzaamheden krijg ik incidenteel kleinere opdrachtjes, zoals het ontwerpen van flyers.",
+        "hard_skills": ["Adobe Indesign"],
+        "soft-skills": ["Samenwerken, managment"],
+        "project_medium": "papier",
+        "proces": [
+            {
+                "title": "Magazine 2023",
+                "text": ["Vorig jaar heb ik voor de tweede keer het blad gemaakt. De pagina's waar de meest positieve reacties voor kwamen, zijn de volgende spreads:"],
+                "img": ["/img/projects/sav/magazines/2023/tijdlijn-spread.png",
+                        "/img/projects/sav/magazines/2023/sportblessures-spread.png",
+                        "/img/projects/sav/magazines/2023/wereldkampioenschap-spread.png"],
+                "buttonLink": "https://drive.google.com/file/d/1MVTuhdERFAqDyfE77rLJd0WAjXCqfsoy/view?usp=sharing",
+                "buttonLinkText": "Bekijk volledige magazine"
+            },
+            {
+                "title": "Magazine 2022",
+                "text": ["In het eerste jaar van het maken van het magazine heb ik een verandering gemaakt in de lay-out van het jaaroverzicht. In eerdere edities ontbrak hier een tijdlijn, zoals te zien is in 'SAV op de Kampioenschappen'. Dit resulteerde in een groot stuk tekst dat lastig te doorzoeken was voor lezers die op zoek waren naar informatie over een specifieke competitie. Om dit probleem aan te pakken, heb ik een tijdlijn toegevoegd. Hierdoor kunnen lezers snel naar het relevante deel van de tekst navigeren, bijvoorbeeld als ze hebben deelgenomen aan een wedstrijd in april."],
+                "img": ["/img/projects/sav/magazines/2022/tijdlijn-spread.png",
+                        "/img/projects/sav/magazines/2022/hamstringblessure-spread.png",
+                        "/img/projects/sav/magazines/2022/jubileum-spread.png"],
+                "buttonLink": "https://drive.google.com/file/d/1dp8h0wWdb5qzCvrPK9UE74DtHR8gDwXk/view?usp=sharing",
+                "buttonLinkText": "Bekijk volledige magazine"
+            },
+            {
+                "title": "Flyers voor ledenwerving",
+                "text": ["De vereniging wilde graag een flyer voor het werven van leden. Deze wilde zij graag uitdelen op sportdagen, tijdens evenementen en uitdelen in scholen. Zie links de voorkant en rechts de achterkant van de flyer."],
+                "img": ["/img/projects/sav/flyers/flyer-ledenwerving-voor.png",
+                        "/img/projects/sav/flyers/flyer-ledenwerving-achter.png"]
+            },
+            {
+                "title": "Flyers voor het zomerabonnement",
+                "text": ["Het ontwerpen voor een flyer/poster voor het zomerabonnement bij de atletiekvereniging in hun huisstijl (links) en in een creatievere posterachtige stijl (rechts)."],
+                "img": ["/img/projects/sav/flyers/zomerabonnement-flyerstyle.png",
+                        "/img/projects/sav/flyers/zomerabonnement-posterstijl.png"]
+            }
+        ]
 	}
 ]

@@ -10,6 +10,7 @@
         "live_link": "https://brassi-to-l.vercel.app/",
         "project_brief": "Hoe kan de Brassicaceae Tree of Life online op een interactieve manier worden gepresenteerd, met aanvullende datavisualisaties, zodat het toegankelijk is voor zowel wetenschappers die onderzoek doen naar een modelsoort als taxonomen?",
         "hard_skills": ["Sveltekit, D3.js"],
-        "soft-skills": ["Samenwerken, managment"]
+        "soft-skills": ["Samenwerken, managment"],
+        "project_medium": "website"
 	}
 ]

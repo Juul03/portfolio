@@ -5,6 +5,7 @@
 	import Header from '../../../components/header.svelte';
 	import Footer from '../../../components/footer.svelte';
 	import Quotes from '../../../components/quotes.svelte';
+	import MagazineLayout from '../../../components/magazine/magazine-pdf.svelte';
 
 	let activeProjectName;
 	let activeProjectData;
@@ -81,16 +82,36 @@
 
 		{#if activeProjectData.proces}
 			<section id="proces">
+				{#if activeProjectData.project_Id != "sav"}
 				<h2>Het proces en ontwerpkeuzes</h2>
+				{:else}
+				<h2>Werkzaamheden</h2>
+				{/if} 
 				{#each activeProjectData.proces as procesPart}
 					<section>
 						<h3>{procesPart.title}</h3>
 						<p>{procesPart.text}</p>
+
+						{#if activeProjectData.project_medium == "website"}
 						<figure class="desktop-mock-up">
 							<div>
 								<img src={procesPart.img} alt="proces afbeelding" />
 							</div>
 						</figure>
+						{:else}
+						<figure class="non-desktop">
+							<div>
+								{#each procesPart.img as procesImage}
+								<img src={procesImage} alt="proces afbeelding" />
+								{/each}
+							</div>
+						</figure>
+						{/if}
+						{#if procesPart.buttonLink}
+						<a class="primary-button" href={procesPart.buttonLink}>
+							{procesPart.buttonLinkText}
+						</a>
+						{/if}
 					</section>
 				{/each}
 			</section>
@@ -233,6 +254,21 @@
 					}
 				}
 			}
+	
+	figure.non-desktop > div {
+		display:flex;
+		flex-direction:row;
+		justify-content: space-evenly;
+		flex-wrap:wrap;
+		gap:1rem;
+		width:75%;
+		margin:auto;
+
+		img {
+			width:45%;
+			height:auto;
+		}
+	}
 
 			
 	a > img {
