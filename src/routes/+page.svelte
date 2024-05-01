@@ -3,6 +3,7 @@
 	import Usps from '../components/usps/usps.svelte';
 	import Projects from '../components/projects.svelte';
 	import Footer from '../components/footer.svelte';
+	import BackToTop from '../components/back-to-top.svelte';
 </script>
 
 <Header />
@@ -28,6 +29,8 @@
 	<Usps />
 
 	<Projects />
+
+	<BackToTop/>
 </main>
 
 <Footer />
