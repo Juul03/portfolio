@@ -168,7 +168,8 @@
 
 		img {
 			max-width: 30%;
-			// order: -1;
+			height:auto;
+			object-fit:cover;
 		}
 	}
 

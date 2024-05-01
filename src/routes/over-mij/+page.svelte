@@ -67,6 +67,9 @@
                         <li>D3.js
                             <SkillLevel3/>
                         </li>
+                        <li>Git(Hub)
+                            <SkillLevel3/>
+                        </li>
                     </ul>
                 </section>
                 <section>

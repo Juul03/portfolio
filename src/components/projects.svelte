@@ -160,7 +160,6 @@
             > img {
                 width: 40%;
                 height:25rem;
-                background:red;
                 object-fit: cover;
                 order:-1;
             }
