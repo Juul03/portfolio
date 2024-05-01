@@ -22,12 +22,18 @@
 	header {
 		width: 100%;
 		background: var(--secundary-color);
+		position:fixed;
+		top:0;
+
+		box-shadow: 0px 5px 5px #d0cbe4;
+
+		z-index:100;
 
 		nav {
 			width: 100%;
-
+	
 			ul {
-				display: flex;
+				display: flex;	
 				flex-direction: row;
 				align-items: center;
 
@@ -40,7 +46,7 @@
 					
 				}
 
-				li:first-child:hover a img {
+				li:first-child a:hover img {
 					transform:translateX(.25rem) scale(1.2);
 				}
 
