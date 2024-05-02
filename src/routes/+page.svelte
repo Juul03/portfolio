@@ -1,9 +1,14 @@
 <script>
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
 	import Header from '../components/header.svelte';
 	import Usps from '../components/usps/usps.svelte';
 	import Projects from '../components/projects.svelte';
 	import Footer from '../components/footer.svelte';
 	import BackToTop from '../components/back-to-top.svelte';
+
+	inject({ mode: dev ? 'development' : 'production' });
 </script>
 
 <Header />
