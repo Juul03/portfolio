@@ -6,6 +6,7 @@
 	import Footer from '../../../components/footer.svelte';
 	import Quotes from '../../../components/quotes.svelte';
 	import MagazineLayout from '../../../components/magazine/magazine-pdf.svelte';
+	import BackToTop from '../../../components/back-to-top.svelte';
 
 	let activeProjectName;
 	let activeProjectData;
@@ -133,6 +134,8 @@
 			</ul>
 		</section>
 		{/if}
+
+		<BackToTop/>
 	</main>
 
 {:else if error}
