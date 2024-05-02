@@ -18,7 +18,7 @@
 		</p>
 		<div>
 			<a class="secundary-button" href="/over-mij">Over mij</a>
-			<a class="primary-button" href="/">Mijn werk</a>
+			<a class="primary-button" href="#projects">Mijn werk</a>
 		</div>
 	</div>
 

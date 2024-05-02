@@ -7,6 +7,8 @@
     import SkillLevel3 from '../../components/skill-level/skill-level3.svelte';
     import SkillLevel4 from '../../components/skill-level/skill-level4.svelte';
     import SkillLevel5 from '../../components/skill-level/skill-level5.svelte';
+
+    import BackToTop from '../../components/back-to-top.svelte';
 </script>
 
 <Header />
@@ -113,6 +115,8 @@
             </section>
         </div>
     </section>
+
+    <BackToTop/>
 </main>
 
 <Quotes/>
@@ -131,6 +135,8 @@
             display:flex;
             flex-direction: column;
             align-items:flex-start;
+
+            padding:var(--standard-padding-section) 0;
 
             h1, h2 {
                 text-align:left;
