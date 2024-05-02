@@ -98,6 +98,7 @@ a {
 p {
 	max-width: 750px;
 	line-height:1.6;
+	letter-spacing:.030rem;
 }
 
 a.primary-button {
