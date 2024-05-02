@@ -53,7 +53,12 @@
 						<h3>{project.project_name}</h3>
 						<div>
 							<h4>{project.project_tags}</h4>
-							<img src="/img/icons/group-project.svg" alt="group project icon" />
+							{#if project.project_type == 'group'}
+							<img src="/img/icons/group-project.svg" alt="group project" />
+							{/if}
+							{#if project.project_type == 'solo'}
+								<img src="/img/icons/individual-project.svg" alt="solo project">
+							{/if}
 						</div>
 
 						<p>{project.project_description_short}</p>

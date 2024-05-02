@@ -178,6 +178,7 @@
 
 				img {
 					order: -1;
+					height:80%;
 				}
 			}
 
