@@ -136,6 +136,8 @@
             flex-direction: column;
             align-items:flex-start;
 
+            padding:var(--standard-padding-section) 0;
+
             h1, h2 {
                 text-align:left;
             }
